@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #29441e;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+main .nav {
+  background-color: #29441e;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 555;
+  box-shadow: 0 0 10px 1px #000;
+}
+
+main .nav a {
+  color: #fff;
+  font-size: 18px;
+  background-color: #000;
+}
+
+main .nav a:hover {
+  color: red;
+  border: 2px solid #000;
+}
+
+main .nav .search input {
+  border-radius: 0 5px 5px 0;
+  box-shadow: none;
+}
+main .nav .search span i {
+  font-size: 20px;
+}
+
+main .nav .search button {
+  width: 50px;
+  border-radius: 5px 0 0 5px;
+}
+
+main .container .row .card {
+  height: 500px;
+}
