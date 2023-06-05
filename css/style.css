@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 75%;
+}
+
+main nav {
+  background: #000000bd url(../image/weather2.png) no-repeat center / cover;
+  background-blend-mode: multiply;
+  height: 120px;
+}
+
+main nav ul .nav-item:first-child .nav-link {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+main nav ul .nav-item:first-child {
+  border: 2px solid #c10101;
+  border-radius: 15px;
+  padding: 2px 20px !important;
+  letter-spacing: 1px;
+}
+
+main nav .navbar-brand {
+  width: 40%;
+}
+
+main nav .nav-link {
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+main nav .navbar-nav {
+  width: 80%;
+}
+
+main nav ul .nav-item a:hover {
+  color: #e12020;
+}
+
+main nav ul .nav-item:hover:not(:first-child) {
+  outline: 2px solid #df0303;
+  border-radius: 15px;
+}
+
+header {
+  background: #00000070 url(../image/licensed-image.jpeg) no-repeat center /
+    cover;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 50vh;
+}
+
+/* #24aae48b */
+main .weather-state .col {
+  background: #0942e08d url(../image/cloud.png) no-repeat center / cover;
+  background-blend-mode: multiply;
+  color: #fff;
+  padding: 0;
+}
+
+main .weather-state .col:nth-child(2) {
+  background-color: #2f2828;
+}
+
+.weather-state .container img {
+  background-color: #175aac90;
+  border-radius: 50%;
+  clip-path: circle(20% at 50% 50%);
+}
+
+.weather-state {
+  position: relative;
+  height: 60vh;
+  background: #000000cc url(../image/licensed-image.jpeg) no-repeat center /
+    cover;
+  background-blend-mode: multiply;
+}
+
+.weather-state .container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.weather-state .container .row .day,
+.weather-state .container .row h4:first-child {
+  text-align: center;
+  background: linear-gradient(#162510, #121010);
+  padding-block: 5px;
+}
+
+.weather-state .container .row .day {
+  text-align: center;
+  background-color: #3a3333;
+  padding-block: 5px;
+}
+
+.weather-state .container .row {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.weather-state .container .wind {
+  width: 180px;
+}
+
+main .section {
+  height: 30vh;
+  background-color: #162510;
+}
+
+main .container .row .form input::placeholder {
+  color: #fff;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.weather-state .container .row:first-child {
+  border-radius: unset;
+}
+
+main .container .row .form input {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px 10px 10px 5px;
+  padding-block: 10px;
+  font-size: 25px;
+}
+
+main .container .row .form button {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  padding: 12px 0;
+  background-color: #121010;
+  border-radius: 0 10px 10px 0;
+}
+
+main .container .row .form button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+main .container .row .form input:focus {
+  background-color: #4d3e3e9b;
+  color: #fff;
+}
+
+main section .iconfa {
+  height: 40vh;
+  font-size: 35px;
+  margin: auto;
+  color: #fff;
+}
+
+main section .iconfa .fa-brands {
+  margin: auto 2rem;
+  box-shadow: 0 0 5px 10px #4faa2b;
+  border-radius: 50%;
+  color: #67b4f3;
+}
+
+.weather-state .container .row .weather h1 {
+  font-size: 80px;
+  position: relative;
+  width: 50%;
+}
+
+@media (max-width: 1400px) {
+  nav .container {
+    width: 100%;
+  }
+  nav .container .navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .container .navbar-nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .weather-state .container .wind {
+    width: 120px;
+  }
+
+  .weather-state .container .row .weather h1 {
+    font-size: 50px;
+  }
+}
+
+.atmos p img {
+  width: 80px;
+}
